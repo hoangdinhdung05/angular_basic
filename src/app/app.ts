@@ -3,10 +3,9 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
+  imports: [RouterOutlet]
 })
-export class App {
-  protected readonly title = signal('anguler100day');
-}
+export class App {}
